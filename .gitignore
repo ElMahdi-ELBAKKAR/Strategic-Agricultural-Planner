@@ -1,0 +1,51 @@
+--- SECURITY (CRITICAL) ---
+
+Never upload environment variables containing API keys or passwords
+
+.env
+.env.local
+.env.*
+
+--- Python System Files ---
+
+These are compiled python files that are generated automatically
+
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+--- Virtual Environment ---
+
+Ignore the folder where your python libraries are installed
+
+.venv/
+venv/
+env/
+ENV/
+
+--- Project Outputs ---
+
+We don't want to track every single PDF generated
+
+reports/
+*.pdf
+
+Ignore the cache file so your local testing doesn't mess up the repo
+
+cache_summaries.json
+
+--- OS & Editor Files ---
+
+Annoying system files created by Mac/Windows or VS Code
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+--- Logs ---
+
+Ignore log files generated during runtime
+
+*.log
